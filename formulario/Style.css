@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body {
+    background-image:url('./fotos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Oswald';
+    text-align: center;
+    font-size:36px;
+}
+
+.form-register {
+    width:400px;
+    background:#000;
+    padding:30px;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    border-radius:12px;
+    color:white;
+    box-shadow:7px 14px 38px #ff0;
+}
+
+.form-register h1 {
+    font-size:36px;
+}
+
+.datosU {
+    width:100%;
+    background:#000;
+    padding:10px;
+    margin:auto;
+    margin-left:-10px;
+    border-radius:20px;
+    margin-bottom:12px;
+    border:1px solid #ff0;
+    font-size:16px;
+    color: #ff0;
+}
+
+.recomendaciones {
+    border-radius:1px;
+    border:1px solid #ff0;
+
+}
+
+.form-register p {
+    height:40px;
+    text-align:center;
+    font-size:18px;
+    line-height:40px;
+    font-family: 'Oswald';
+}
+
+
+.form-register a {
+    color:#ff0;
+    text-decoration:none ;
+    width: 390px;
+    height: 200px;
+}
+
+.form-register a:hover {
+    color:#ff0;
+    text-decoration:underline;
+}
+
+
+.form-register .botons {
+    width:100%;
+    border: none;
+    padding:10px;
+    background:#ff0;
+    font-size:16px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1px;
+  }
+
+  textarea{
+      width: 390px;
+      height: 200px;
+      background-color: rgb(64, 65, 11);
+      border-radius:1px;
+      border:1px solid #ff0;
+      color:#ff0;
+      font-size: 18px;
+}
+
+ 

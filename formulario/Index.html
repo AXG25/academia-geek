@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>formulario registro</title>
+  </head>
+  <body>
+    <section class="form-register">
+      <h1 id="title">ABI-DAS</h1>
+      <p id="description">REGISTRESE Y GANE UN BONO DE DESCUENTO</p>
+
+     <form id="survey-form">
+      <div>
+        <label id="name-label">Nombre</label>
+          <input
+            class="datosU"
+            type="text"
+            name="nombres"
+            id="name"
+            placeholder="ingrese sus Nombres"
+            required
+          />
+        
+
+        <label> Apellidos</label>
+          <input
+            class="datosU"
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="ingrese sus Apellidos"
+            required
+          />
+        
+
+        <label id="email-label">Email</label>
+          <input
+            class="datosU"
+            type="email"
+            name="correo"
+            id="email"
+            placeholder="ingrese su Correo electrónico"
+            required
+          />
+        
+
+        <label> Contraseña</label>
+          <input
+            class="datosU"
+            type="password"
+            name="costraseña"
+            id="contraseña"
+            placeholder="ingrese su Contraseña"
+            required
+          />
+        
+
+        <label id="number-label"> Edad</label>
+          <input
+            class="datosU"
+            type="number"
+            name="edad"
+            id="number"
+            min="10"
+            max="99"
+            placeholder="ingrese su edad"
+          />
+        
+      </div>
+
+      <div>
+        <select id="dropdown" name="articulos" class="datosU" required>
+          <option disabled selected value>
+            seleccione el articulo para el descuento
+          </option>
+          <option value="camiseta">Camiseta Oficial ABI-DAS</option>
+          <option value="sudadera">Sudadera Oficial ABI-DAS</option>
+          <option value="buzo">Buzo Oficial ABI-DAS</option>
+          <option value="zapatos">Zapatos Deportivos ABI-DAS</option>
+        </select>
+      </div>
+      <div class="recomendaciones">
+        <p>¿Recomendarias ABI-DAS a tus amig@s?</p>
+
+        <label>
+          <input
+            name="recomendacion"
+            value="obvio"
+            type="radio"
+            class="input-radio"
+            checked
+          />Obvio!!!
+        </label>
+
+        <label>
+          <input
+            name="recomendacion"
+            value="tal-vez"
+            type="radio"
+            class="input-radio"
+          />Jeje si me das un descuento podria
+        </label>
+
+        <label>
+          <input
+            name="recomendacion"
+            value="nel-perro"
+            type="radio"
+            class="input-radio"
+          />No lo se rick :/
+        </label>
+      </div>
+
+      <div>
+        <select id="gustos" name="gustos" class="datosU" required>
+          <option disabled selected value>
+            ¿Que es lo que mas te gusta de nosotros?
+          </option>
+          <option value="los-colores">La seleccion de colores</option>
+          <option value="la-calidad">La tremenda calidad</option>
+          <option value="los-diseños">Los hermosos diseños</option>
+          <option value="los-precios">Los precios tan accesibles</option>
+          <option value="la-atencion">
+            La atencion recibida en las tiendas oficiales
+          </option>
+          <option value="el-sitioWeb">
+            El sitio web diseñado por un papucho :*
+          </option>
+        </select>
+      </div>
+
+      <div class="recomendaciones">
+        <p>¿En que podemos mejorar?</p>
+
+        <label>
+          <input
+            name="feed-back"
+            value="productos"
+            type="checkbox"
+            class="input-checkbox"
+          />Los productos</label
+        >
+
+        <label>
+          <input
+            name="feed-back"
+            value="precios"
+            type="checkbox"
+            class="input-checkbox"
+          />Los precios</label
+        >
+
+        <label>
+          <input
+            name="feed-back"
+            value="atencion"
+            type="checkbox"
+            class="input-checkbox"
+          />La atencion</label
+        >
+
+        <label>
+          <input
+            name="feed-back"
+            value="la-web"
+            type="checkbox"
+            class="input-checkbox"
+          />EL sitio Web</label
+        >
+      </div>
+
+      <div class="controls">
+        <p>¿Algún comentario o sugerencia?</p>
+        <textarea 
+          id="comentarios"
+          class="input-textarea"
+          name="comentarios"
+          placeholder="Ingrese su comentario aquí..."
+        ></textarea>
+      </div>
+      
+      <p>Esta de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+      <button type="submit" id="submit" class="botons">
+              Registrarse
+            </button>
+      <p><a href="#">iniciar sesión</a></p>
+     </form>
+    </section>
+  </body>
+</html>
