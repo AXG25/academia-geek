@@ -76,6 +76,7 @@ header nav ul li a {
 }
 
 #form{
+    margin: 0 auto;
     padding: 50px ;
     margin: 200px;
     margin-left: 500px;
