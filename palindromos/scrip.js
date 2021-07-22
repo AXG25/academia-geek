@@ -1,18 +1,28 @@
-let frase;
-let fraseReverse;
+let palabra;
+let inverse;
 
+function Palindromo(palabra) {
+    palabra = document.querySelector("#palabra").value;
+    inverse = palabra;
 
-function frasePalindromo(frase){
-    frase = document.querySelector('#frase').value; 
-    fraseReverse = frase;
+    palabra = palabra
+        .toLowerCase()
+        .replace(/[^a-zA-Z ]/g, "")
+        .split("");
+    inverse = inverse
+        .toLowerCase()
+        .replace(/[^a-zA-Z ]/g, "")
+        .split("")
+        .reverse()
+        .toString();
 
-    frase = frase.toLowerCase().replace(/[^a-zA-Z ]/g, "").split("");
-    fraseReverse = fraseReverse.toLowerCase().replace(/[^a-zA-Z ]/g, "").split("").reverse().toString();
-
-    if (frase == fraseReverse){
-        document.querySelector('.result').innerHTML = `Es un palindromo`;
-    }
-    else {
-        document.querySelector('.result').innerHTML = `No es un palindromo`;
+    if (palabra == inverse) {
+        document.querySelector(
+            ".resultado"
+        ).innerHTML = `Si!! Esta palabra es un palindromo =)`;
+    } else {
+        document.querySelector(
+            ".resultado"
+        ).innerHTML = `No... Esta palabra no es un palindromo =(`;
     }
 }
