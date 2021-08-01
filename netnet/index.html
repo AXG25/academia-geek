@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Peliculas y series</title>
+  </head>
+
+  <body>
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-dark">
+     <a class="navbar-brand text-danger me-5 ms-5" href="#">ABISPLUS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-10">
+            <li class="nav-item">
+              <a class="nav-link active text-white me-5" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-5" href="#series">Series y Peliculas de Estreno</a>
+            </li>
+            
+         
+          <!--boton de busqueda-->
+          <form  id="busqueda" class="d-flex">
+            <input
+              class="form-control me-3"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-outline-danger">
+              Buscar
+            </button>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                ...
+              </div>
+            </div>
+      
+
+          </form>
+        </div>
+    
+
+        
+    </nav>
+
+    <!--carrusel-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://www.themoviedb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Black Widow</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://www.themoviedb.org/t/p/original/4epzcO9HGbfc8BUJT0oNkL3rmCO.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rapidos y Furiosos 9</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.themoviedb.org/t/p/original/8s4h9friP6Ci3adRGahHARVd76E.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Space Jam</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+<!--cartas-->
+    <div id="series" class="container m-5">
+      <div class="row row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-6 m-4">
+
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/v1XE3dtqd9zsEET0EMkxBgXYP6T.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Black Widow</h5>
+              <p class="card-text text-white"><i>Ella ha terminado de huir a su pasado</i></p>
+              <a href="https://pelisplus.so/pelicula/black-widow" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/aIyqWTuf6NouKphVlxzbv9pblxQ.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Rapidos y Furiosos 9</h5>
+              <p class="card-text text-white"><i>La justicia siempre llega a su destino</i></p>
+              <a href="https://pelisplus.so/pelicula/f9" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/gwwTdBu7KOvRz2qbM5RxEDtKNBB.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Space Jam</h5>
+              <p class="card-text text-white"><i>¡Bienvenidos al partido del siglo!</i></p>
+              <a href="https://pelisplushd.net/pelicula/space-jam-nuevas-leyendas" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/tzp6VzED2TBc02bkYoYnQa6r2OK.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">La Guerra del Mañana</h5>
+              <p class="card-text text-white"><i>La lucha por el mañana comienza hoy</i></p>
+              <a href="https://pelisplushd.net/pelicula/la-guerra-del-manana" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container m-5">
+      <div class="row row row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-6 m-4">
+
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/85J1DwZowIlKFOF7jllgCD3iHhx.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Un Jefe en Pañales 2</h5>
+              <p class="card-text text-white"><i>El tiempo de juegos ha terminado</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/j93NHWoTjdsL4sdz058M3AvKrMy.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Luca</h5>
+              <p class="card-text text-white"><i>Este verano estas invitado a Portorosso</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/gj4Lwldois15IaNnl4tadesHGC4.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Peter Rabbit 2 </h5>
+              <p class="card-text text-white"><i>El jardín tan solo fue el comienzo</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/5bsApWAUqb0jeXtHPjKQ6MZOtZJ.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Cruella</h5>
+              <p class="card-text text-white"><i>Brillante. Malvada. Un poco loca.</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container m-5">
+      <div class="row row row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-6 m-4">
+
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/kAHPDqUUciuObEoCgYtHttt6L2Q.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Loki </h5>
+              <p class="card-text text-white"><i>Ha llegado el momento de Loki</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/2O8tlUzKS3uddGW5D2B9XM6b4e.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">The Flash </h5>
+              <p class="card-text text-white"><i>El hombre más rápido vivo</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/bdlGjwPWpE45CKbcP4i3A7du9CP.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">The Good Doctor </h5>
+              <p class="card-text text-white"><i>Sus métodos son milagrosos</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-danger" style="width: 16rem;">
+            <img src="https://www.themoviedb.org/t/p/original/hb49zHGP6kUwqsR2wfPdTT6U27J.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-dark">
+              <h5 class="card-title text-danger">Monsters at Work  </h5>
+              <p class="card-text text-white"><i>Hay que reir para vivir</i></p>
+              <a href="#" class="btn btn-danger">Ver Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+

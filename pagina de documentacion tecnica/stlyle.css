@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+    color: rgb(0, 255, 0);
+    font-family: 'Press Start 2P';
+    
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+}
+
+hr {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+ h1 {
+        background: linear-gradient(yellow,red);
+        -webkit-background-clip: text;
+          color: transparent;
+
+     }
+
+ h4, h5 {
+    background: linear-gradient(yellow,red);
+        -webkit-background-clip: text;
+          color: transparent;
+ }
+
+ li {
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+      color: transparent;
+ }
+
+ p {
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+      color: transparent;
+ }
+
+ a {
+    background: linear-gradient(green,green,blue,blue);
+    -webkit-background-clip: text;
+      color: transparent; 
+ }
+
+ #nav-bar header {
+    background: linear-gradient(green, green, blue,blue);
+    -webkit-background-clip: text;
+      color: transparent;   
+ }
+
+ #nav-bar {
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+ 
+ }
+  
+
+#nav-bar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+#nav-bar li {
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#nav-bar a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
