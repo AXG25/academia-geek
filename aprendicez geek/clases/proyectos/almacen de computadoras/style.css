@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+body {
+    margin: 0px;
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  
+    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+    color: rgb(0, 0, 0);
+
+}
+
+header {
+    position: fixed;
+    display: flex;
+    left: 0px;
+    top:0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Zen Tokyo Zoo', Georgia, serif ;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    margin-left: 38%;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+header div img {
+
+}
+
+
+header nav {
+    margin: 50px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    border: #C6FFDD 2px solid;
+    background: #C6FFDD;  
+    color: black;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+    header nav ul li:hover {
+        border: #C6FFDD 5px solid;
+    }
+
+header nav ul li a {
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Zen Tokyo Zoo', Georgia, serif ;
+}
+
+
+table {
+    padding-top: 200px;
+    border-spacing: 50px;
+    margin: 20px auto;
+    margin-bottom: 500x;
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+table tr td{
+    padding: 40px;
+    background-color: white;
+    border-radius: 100px;
+}
+   
+ble tr td:hover {
+    transform: scale(2);
+}
+.nombre {
+    text-align: center;
+    font-size: 20px;
+}
+
+table tr td img {
+    width: 250px;
+    height: 200px;
+}
+
+table tr td img:hover {
+    transform: rotate(3deg);
+}
